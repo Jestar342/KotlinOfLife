@@ -6,4 +6,3 @@ data class Cell(val isAlive: Boolean, val numberOfNeighbours: Int) {
         fun deadWith(numberOfNeighbours: Int) : Cell = Cell(false, numberOfNeighbours)
     }
 }
-

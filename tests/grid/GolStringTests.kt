@@ -1,5 +1,6 @@
 package grid
 
+import gameoflife.Grid
 import gameoflife.grid.toGolString
 import io.kotest.core.spec.style.FreeSpec
 import io.kotest.matchers.be
@@ -42,4 +43,4 @@ class GolStringTests : FreeSpec({
     }
 })
 
-private infix fun Array<Array<Boolean>>.golStringShouldBe(expected: String) = this.toGolString() should be(expected)
+private infix fun Grid.golStringShouldBe(expected: String) = this.toGolString() should be(expected)
